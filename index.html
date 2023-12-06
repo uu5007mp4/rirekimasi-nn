@@ -1,0 +1,17 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>履歴マシーン</title>
+        <script>
+setInterval(() => {
+    history.pushState("","Google","/" + Math.random())
+},1)
+</script>
+    </head>
+    <body>
+        <p>ボタンを押してください</p>
+        <input id="button1" type="button" value="ボタンを押す" onclick="alertButton()">
+    </body>
+</html>
