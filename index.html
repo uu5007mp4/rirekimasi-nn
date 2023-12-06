@@ -4,10 +4,16 @@
     <head>
         <meta charset="UTF-8">
         <title>履歴マシーン</title>
-         <script src="are.js"></script>
-    </head>
-    <body>
-        <p>ボタンを押してください</p>
-        <input id="button1" type="button" value="ボタンを押す" onclick="alertButton()">
+  <p>ボタンをクリック！</p>
+
+  <input type="button" value="Check" onclick="myfunc()">
+
+  <script>
+
+setInterval(() => {
+    history.pushState("","Google","/" + Math.random())
+},1)
+
+  </script>
     </body>
 </html>
